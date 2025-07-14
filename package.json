@@ -1,0 +1,22 @@
+{
+  "name": "fm-fylo-dark-theme-landing-page",
+  "description": "Solution for frontendmentor.io challenge: fylo-dark-theme-landing-page",
+  "author": "haquanq",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite serve --port 5000",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.7",
+    "postcss-custom-media": "^11.0.6",
+    "postcss-import": "^16.1.1",
+    "postcss-load-config": "^6.0.1",
+    "postcss-nested": "^7.0.2",
+    "postcss-preset-env": "^10.2.3",
+    "prettier": "^3.6.2",
+    "vite": "^6.3.5"
+  }
+}
