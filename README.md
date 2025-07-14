@@ -35,11 +35,12 @@ Developed with mobile-first workflow, followed with [ARIA Authoring Practices Gu
 
 ### Built with
 
-| Tool          | Note                               |
-| ------------- | ---------------------------------- |
-| `HTML`        | Standard markup language           |
-| `CSS`         | Vanilla CSS                        |
-| `BrowserSync` | Development server, live reloading |
+| Tool            | Note                                                    |
+| --------------- | ------------------------------------------------------- |
+| `HTML`          | Standard markup language                                |
+| `CSS + PostCSS` | Vanilla CSS with sass like features (nestings, imports) |
+| `Vite`          | Development server, build tool                          |
+| `Prettier`      | Code formatting                                         |
 
 ## :astronaut: Working in this repository
 
