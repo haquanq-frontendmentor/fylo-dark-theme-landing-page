@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite serve --port 5000",
+    "lint": "stylelint ./src/css/*.css",
     "build": "vite build"
   },
   "devDependencies": {
@@ -17,6 +18,8 @@
     "postcss-nested": "^7.0.2",
     "postcss-preset-env": "^10.2.3",
     "prettier": "^3.6.2",
+    "stylelint": "^16.21.1",
+    "stylelint-config-standard": "^38.0.0",
     "vite": "^6.3.5"
   }
 }
