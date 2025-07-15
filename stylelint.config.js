@@ -6,6 +6,7 @@ export default {
         "declaration-block-no-redundant-longhand-properties": null,
         "declaration-block-no-duplicate-properties": true,
         "color-function-alias-notation": null,
+        "selector-class-pattern": null,
 
         "font-family-name-quotes": "always-unless-keyword",
         "color-function-notation": "legacy",
