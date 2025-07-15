@@ -5,6 +5,7 @@ export default {
         "custom-property-empty-line-before": null,
         "declaration-block-no-redundant-longhand-properties": null,
         "declaration-block-no-duplicate-properties": true,
+        "color-function-alias-notation": null,
 
         "font-family-name-quotes": "always-unless-keyword",
         "color-function-notation": "legacy",
