@@ -7,6 +7,7 @@
     border-radius: var(--rounded-sm);
     box-shadow: var(--shadow-md);
     position: relative;
+    text-align: center;
 
     &::after {
         z-index: -1;
@@ -19,10 +20,6 @@
         background-color: var(--color-navy-950);
     }
 
-    @media (--tablet) {
-        text-align: center;
-    }
-
     &__title {
         font-size: clamp(var(--text-xl), 0.5344rem + 3.0534vw, var(--text-3xl));
         line-height: calc(2em - var(--leading-4));
@@ -33,25 +30,22 @@
         font-size: var(--text-sm);
         line-height: var(--leading-6);
         margin-bottom: clamp(var(--space-6), 1.0229rem + 2.0356vw, var(--space-8));
-
-        @media (--tablet) {
-            padding-inline: var(--space-12);
-        }
+        padding-inline: clamp(0rem, -2.8626rem + 12.2137vw, var(--space-12));
     }
 
     &__form {
-        display: grid;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
         gap: var(--space-8) var(--space-4);
-        align-content: start;
-
-        @media (--tablet) {
-            grid-template-columns: auto max-content;
-        }
     }
 
     &__field {
         --input-padding-x: clamp(var(--space-6), 1.0229rem + 2.0356vw, var(--space-8));
 
+        flex-grow: 5;
+        flex-basis: 350px;
         position: relative;
         border-radius: var(--rounded-full);
     }
@@ -82,26 +76,18 @@
     &__hint {
         position: absolute;
         text-align: start;
-        padding-block-start: var(--space-2);
         top: 100%;
-        font-size: var(--text-sm);
+        font-size: clamp(var(--text-xs), 1.0389rem + -1.2327vw, var(--text-sm));
         color: var(--color-red-500);
-
-        @media (--tablet) {
-            padding-block-start: var(--space-3);
-            padding-inline: var(--input-padding-x);
-        }
+        padding-block-start: clamp(var(--space-2), 0.3555rem + 0.6163vw, var(--space-3));
+        padding-inline: var(--input-padding-x);
     }
 
-    @media (hover: hover) {
-        &__input:hover + &__input-overlay {
-            border-color: var(--color-cyan-500);
-            box-shadow: 0 0 0 3px var(--color-gray-100);
-        }
-    }
-
-    &__input:focus + &__input-overlay {
-        border-color: var(--color-cyan-500);
+    &__submit-btn {
+        flex-grow: 1;
+        flex-shrink: 0;
+        border: 0;
+        height: fit-content;
     }
 
     &__input[aria-invalid="true"] + &__input-overlay {
@@ -112,9 +98,14 @@
         display: block;
     }
 
-    &__submit-btn {
-        flex-shrink: 0;
-        border: 0;
-        height: fit-content;
+    &__input:focus + &__input-overlay {
+        border-color: var(--color-cyan-500);
+    }
+
+    @media (hover: hover) {
+        &__input:hover + &__input-overlay {
+            border-color: var(--color-cyan-500);
+            box-shadow: 0 0 0 3px var(--color-gray-100);
+        }
     }
 }
