@@ -20,12 +20,13 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 Accessibility
 
-- [ ] Responsive accross different screen sizes
-- [ ] Added custom indicator when interactive elements focused
+- [x] Responsive accross different screen sizes
+- [x] Added custom indicator when interactive elements focused
+- [x] Screen readers can announce form control behavior
 
 ### Preview
 
-![](./.docs/design/desktop-design.jpg)
+![](./.docs/preview.png)
 
 ## :boat: Development workflow
 
