@@ -41,6 +41,7 @@ Developed with mobile-first workflow, followed with [ARIA Authoring Practices Gu
 | `CSS + PostCSS` | Vanilla CSS with sass like features (nestings, imports) |
 | `Vite`          | Development server, build tool                          |
 | `Prettier`      | Code formatting                                         |
+| `StyleLint`     | Enforce CSS conventions                                 |
 
 ## :astronaut: Working in this repository
 
