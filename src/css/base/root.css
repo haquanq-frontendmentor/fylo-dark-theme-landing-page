@@ -1,8 +1,8 @@
 :root {
-    --color-navy-850: hsl(217, 28%, 15%);
-    --color-navy-900: hsl(218, 28%, 13%);
-    --color-navy-950: hsl(216, 53%, 9%);
     --color-navy-800: hsl(219, 30%, 18%);
+    --color-navy-850: hsl(217, 28%, 15%);
+    --color-navy-950: hsl(216, 53%, 9%);
+    --color-navy-900: hsl(218, 28%, 13%);
 
     --color-teal-200: hsl(176, 68%, 64%);
     --color-cyan-500: hsl(198, 60%, 50%);
@@ -14,6 +14,9 @@
     --color-white: hsl(0, 0%, 100%);
 
     --gradient-brand: linear-gradient(90deg, var(--color-teal-200) 2%, var(--color-cyan-500) 40%);
+
+    --shadow-sm: rgb(0, 0, 0, 15%) 0px 16px 32 -12px;
+    --shadow-md: rgb(0, 0, 0, 25%) 0px 16px 48px -8px;
 
     --font-primary: "Open Sans", system-ui, sans-serif;
     --font-secondary: "Raleway", system-ui, sans-serif;
@@ -79,4 +82,6 @@
     --space-25: calc(var(--spacing) * 25);
 
     --rounded-full: 9999px;
+    --rounded-xs: 0.25rem;
+    --rounded-sm: 0.5rem;
 }
