@@ -7,5 +7,7 @@ export default {
         "color-function-notation": "legacy",
         "hue-degree-notation": "number",
         "import-notation": "string",
+        "at-rule-empty-line-before": ["always", { ignore: ["blockless-after-blockless"] }],
+        "media-feature-range-notation": "prefix",
     },
 };
