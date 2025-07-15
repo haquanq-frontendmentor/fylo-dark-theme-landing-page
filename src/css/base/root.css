@@ -8,9 +8,12 @@
     --color-cyan-500: hsl(198, 60%, 50%);
     --color-red-500: hsl(0, 100%, 63%);
 
-    --color-gray-300: hsl(0, 0%, 71%);
+    --color-gray-200: hsl(0, 0%, 75%);
+    --color-gray-100: hsl(0, 0%, 90%);
 
     --color-white: hsl(0, 0%, 100%);
+
+    --gradient-brand: linear-gradient(90deg, var(--color-teal-200) 2%, var(--color-cyan-500) 40%);
 
     --font-primary: "Open Sans", system-ui, sans-serif;
     --font-secondary: "Raleway", system-ui, sans-serif;
@@ -74,4 +77,6 @@
     --space-23: calc(var(--spacing) * 23);
     --space-24: calc(var(--spacing) * 24);
     --space-25: calc(var(--spacing) * 25);
+
+    --rounded-full: 9999px;
 }
