@@ -14,7 +14,9 @@
         position: relative;
         padding-inline: clamp(var(--space-6), 1.0229rem + 2.0356vw, var(--space-8));
         padding-block: clamp(var(--space-6), 1.0229rem + 2.0356vw, var(--space-8));
-        background-color: var(--color-navy-900);
+        background-color: var(--color-navy-800);
+        border-radius: var(--rounded-xs);
+        box-shadow: var(--shadow-sm);
 
         &:first-child::before {
             content: url("../../assets/images/bg-quotes.png");
