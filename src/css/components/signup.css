@@ -1,0 +1,94 @@
+.signup {
+    padding-block-start: clamp(var(--space-6), 0.0687rem + 6.1069vw, var(--space-12));
+    padding-block-end: clamp(var(--space-6), -0.8855rem + 10.1781vw, var(--space-16));
+    padding-inline: clamp(var(--space-6), 0.0687rem + 6.1069vw, var(--space-12));
+    background-color: var(--color-navy-850);
+    max-width: 50rem;
+    border-radius: var(--rounded-sm);
+    box-shadow: var(--shadow-md);
+
+    @media (--tablet) {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: clamp(var(--text-xl), 0.5344rem + 3.0534vw, var(--text-3xl));
+        line-height: calc(2em - var(--leading-4));
+        margin-bottom: var(--space-4);
+    }
+
+    &__description {
+        font-size: var(--text-sm);
+        line-height: var(--leading-6);
+        margin-bottom: clamp(var(--space-6), 1.0229rem + 2.0356vw, var(--space-8));
+
+        @media (--tablet) {
+            padding-inline: var(--space-12);
+        }
+    }
+
+    &__form {
+        display: grid;
+        gap: var(--space-8) var(--space-4);
+        align-content: start;
+
+        @media (--tablet) {
+            grid-template-columns: auto max-content;
+        }
+    }
+
+    &__field {
+        --input-padding-x: clamp(var(--space-6), 1.0229rem + 2.0356vw, var(--space-8));
+
+        position: relative;
+        border-radius: var(--rounded-full);
+    }
+
+    &__input {
+        border: 0;
+        border-radius: inherit;
+        font-size: var(--text-sm);
+        height: 3.125rem;
+        padding-inline: var(--input-padding-x);
+        width: 100%;
+
+        @supports selector(:focus-visible) {
+            &:focus {
+                outline: 0;
+            }
+
+            &:focus-visible {
+                outline: 3px dashed var(--color-white);
+                outline-offset: 3px;
+            }
+        }
+    }
+
+    &__input-overlay {
+        pointer-events: none;
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        border: 2px solid var(--color-teal-200);
+    }
+
+    &__hint {
+        position: absolute;
+        text-align: start;
+        padding-block-start: var(--space-2);
+        top: 100%;
+        font-size: var(--text-sm);
+        color: var(--color-red-500);
+
+        @media (--tablet) {
+            padding-block-start: var(--space-3);
+            padding-inline: var(--input-padding-x);
+        }
+    }
+
+    &__submit-btn {
+        flex-shrink: 0;
+        border: 0;
+        height: fit-content;
+    }
+}
