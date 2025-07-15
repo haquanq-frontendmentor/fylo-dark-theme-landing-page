@@ -1,4 +1,6 @@
 .btn {
+    --outline-offset: 4px;
+
     padding-block: var(--space-4) calc(var(--space-4) + var(--pixel) * 2);
     padding-inline: var(--space-8);
     background: var(--gradient-brand);
@@ -8,39 +10,26 @@
     cursor: pointer;
     position: relative;
     transition: box-shadow 200ms ease;
-}
 
-.btn::after {
-    border-radius: inherit;
-    content: attr(data-title);
-    position: absolute;
-    padding: inherit;
-    inset: 0;
-    background: linear-gradient(90deg, var(--color-cyan-500) 60%, var(--color-teal-200) 95%);
-    opacity: 0;
-    color: var(--color-white);
-    transition: opacity 300ms ease-in-out;
-}
-
-@media (hover: hover) {
-    .btn:hover::after {
-        opacity: 0.5;
+    &::after {
+        border-radius: inherit;
+        content: attr(data-title);
+        position: absolute;
+        padding: inherit;
+        inset: 0;
+        background: linear-gradient(90deg, var(--color-cyan-500) 60%, var(--color-teal-200) 95%);
+        opacity: 0;
+        color: var(--color-white);
+        transition: opacity 300ms ease-in-out;
     }
 
-    .btn:hover {
-        box-shadow: 0 0 0 3px var(--color-white);
-    }
-}
+    @media (hover: hover) {
+        &:hover::after {
+            opacity: 0.5;
+        }
 
-@supports selector(:focus-visible) {
-    .btn:focus {
-        outline: 0;
-    }
-
-    .btn:focus-visible {
-        outline-width: 3px;
-        outline-offset: 3px;
-        outline-style: dashed;
-        outline-color: var(--color-white);
+        &:hover {
+            box-shadow: 0 0 0 3px var(--color-white);
+        }
     }
 }

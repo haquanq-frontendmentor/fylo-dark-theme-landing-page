@@ -57,23 +57,15 @@
     }
 
     &__input {
+        --outline-offset: 4px;
+
         border: 0;
         border-radius: inherit;
         font-size: var(--text-sm);
         height: 3.125rem;
         padding-inline: var(--input-padding-x);
         width: 100%;
-
-        @supports selector(:focus-visible) {
-            &:focus {
-                outline: 0;
-            }
-
-            &:focus-visible {
-                outline: 3px dashed var(--color-white);
-                outline-offset: 3px;
-            }
-        }
+        transition: box-shadow 200ms ease;
     }
 
     &__input-overlay {
@@ -82,7 +74,9 @@
         inset: 0;
         border-radius: inherit;
         border: 2px solid transparent;
-        transition: border-color 200ms ease;
+        transition-property: border-color, box-shadow;
+        transition-timing-function: ease;
+        transition-duration: 200ms;
     }
 
     &__hint {
@@ -101,12 +95,13 @@
 
     @media (hover: hover) {
         &__input:hover + &__input-overlay {
-            border-color: var(--color-teal-200);
+            border-color: var(--color-cyan-500);
+            box-shadow: 0 0 0 3px var(--color-gray-100);
         }
     }
 
     &__input:focus + &__input-overlay {
-        border-color: var(--color-teal-200);
+        border-color: var(--color-cyan-500);
     }
 
     &__input[aria-invalid="true"] + &__input-overlay {

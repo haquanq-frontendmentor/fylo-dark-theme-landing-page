@@ -54,3 +54,20 @@ h6 {
     font-family: var(--font-secondary);
     text-wrap: balance;
 }
+
+@supports selector(:focus-visible) {
+    button:focus,
+    input:focus,
+    a:focus {
+        outline: 0;
+    }
+
+    button:focus-visible,
+    input:focus-visible,
+    a:focus-visible {
+        outline-width: var(--outline-width, var(--focus-outline-width));
+        outline-offset: var(--outline-offset, var(--focus-outline-offset));
+        outline-style: var(--outline-style, var(--focus-outline-style));
+        outline-color: var(--outline-color, var(--focus-outline-color));
+    }
+}

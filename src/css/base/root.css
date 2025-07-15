@@ -84,4 +84,9 @@
     --rounded-full: 9999px;
     --rounded-xs: 0.25rem;
     --rounded-sm: 0.5rem;
+
+    --focus-outline-width: 3px;
+    --focus-outline-offset: 3px;
+    --focus-outline-style: dashed;
+    --focus-outline-color: var(--color-white);
 }
