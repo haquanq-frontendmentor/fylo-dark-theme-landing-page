@@ -12,12 +12,13 @@
 
 .btn::after {
     border-radius: inherit;
-    content: "Get Started";
+    content: attr(data-title);
     position: absolute;
     padding: inherit;
     inset: 0;
     background: linear-gradient(90deg, var(--color-cyan-500) 60%, var(--color-teal-200) 95%);
     opacity: 0;
+    color: var(--color-white);
     transition: opacity 300ms ease-in-out;
 }
 
