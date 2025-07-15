@@ -4,3 +4,6 @@
 
 @import "./utils/container.css";
 @import "./utils/screen-reader.css";
+
+@import "./components/header.css";
+@import "./components/nav.css";

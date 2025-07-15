@@ -1,0 +1,23 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        max-height: clamp(1.5rem, 0.8913rem + 3.0435vw, 3.25rem);
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        gap: var(--space-6);
+    }
+
+    &__link {
+        font-size: clamp(var(--text-xs), 0.5115rem + 1.0178vw, var(--text-md));
+        line-height: var(--leading-5);
+        line-height: calc(1em + var(--leading-2));
+        text-decoration: none;
+        color: var(--color-navy-800);
+    }
+}
