@@ -18,6 +18,6 @@
         line-height: var(--leading-5);
         line-height: calc(1em + var(--leading-2));
         text-decoration: none;
-        color: var(--color-gray-300);
+        color: var(--color-gray-100);
     }
 }
