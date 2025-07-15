@@ -10,9 +10,38 @@
         position: relative;
         display: flex;
         padding-inline: var(--space-10) 0;
+        color: var(--color-gray-100);
+        text-decoration: none;
+        width: fit-content;
 
         &:nth-child(1) {
             grid-row: 1 / -1;
+        }
+    }
+
+    &__item[href] {
+        .address__detail {
+            position: relative;
+        }
+
+        .address__detail::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 100%;
+            top: 100%;
+            border-bottom: 2px solid var(--color-teal-200);
+            transition: right 250ms ease;
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                color: var(--color-teal-200);
+            }
+
+            &:hover .address__detail::after {
+                right: 0%;
+            }
         }
     }
 
