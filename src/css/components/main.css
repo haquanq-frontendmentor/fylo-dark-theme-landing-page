@@ -5,8 +5,8 @@
     &__pattern {
         pointer-events: none;
         position: absolute;
-        height: 80%;
         bottom: 0;
+        top: clamp(18rem, 7.5994rem + 44.376vw, 36rem);
         left: 0;
         right: 0;
         z-index: -1;
