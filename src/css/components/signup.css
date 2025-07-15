@@ -6,6 +6,18 @@
     max-width: 50rem;
     border-radius: var(--rounded-sm);
     box-shadow: var(--shadow-md);
+    position: relative;
+
+    &::after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        top: 50%;
+        bottom: 0;
+        left: -100rem;
+        right: -100rem;
+        background-color: var(--color-navy-950);
+    }
 
     @media (--tablet) {
         text-align: center;

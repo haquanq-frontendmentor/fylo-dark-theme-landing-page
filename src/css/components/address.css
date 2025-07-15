@@ -1,0 +1,25 @@
+.address {
+    font-style: normal;
+    font-size: var(--text-sm);
+    line-height: var(--leading-6);
+    display: grid;
+    gap: var(--space-4);
+    align-content: start;
+
+    &__item {
+        position: relative;
+        display: flex;
+        padding-inline: var(--space-10) 0;
+
+        &:nth-child(1) {
+            grid-row: 1 / -1;
+        }
+    }
+
+    &__icon {
+        height: 1.125rem;
+        position: absolute;
+        top: var(--space-1);
+        left: 0;
+    }
+}

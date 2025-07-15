@@ -1,0 +1,15 @@
+.footer {
+    background-color: var(--color-navy-950);
+
+    &__link {
+        grid-column: 1 / -1;
+        width: max-content;
+    }
+
+    &__layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+        gap: var(--space-12) var(--space-16);
+        padding-block: var(--space-16);
+    }
+}
