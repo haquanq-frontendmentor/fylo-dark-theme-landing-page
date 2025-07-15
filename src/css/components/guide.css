@@ -33,6 +33,10 @@
         position: relative;
         transition: color 200ms ease;
 
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
+
         &::after,
         &::before {
             pointer-events: none;
@@ -44,6 +48,10 @@
             height: calc(var(--pixel) * 2);
             background-color: var(--color-teal-200);
             transition: right 200ms;
+
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
         }
 
         &::after {

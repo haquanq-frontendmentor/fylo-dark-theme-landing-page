@@ -11,6 +11,10 @@
     position: relative;
     transition: box-shadow 200ms ease;
 
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
+
     &::after {
         border-radius: inherit;
         content: attr(data-title);
@@ -21,6 +25,10 @@
         opacity: 0;
         color: var(--color-white);
         transition: opacity 300ms ease-in-out;
+
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
     }
 
     @media (hover: hover) {

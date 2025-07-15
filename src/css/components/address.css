@@ -32,6 +32,10 @@
             top: 100%;
             border-bottom: 2px solid var(--color-teal-200);
             transition: right 250ms ease;
+
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
         }
 
         @media (hover: hover) {

@@ -60,6 +60,10 @@
         padding-inline: var(--input-padding-x);
         width: 100%;
         transition: box-shadow 200ms ease;
+
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
     }
 
     &__input-overlay {
@@ -71,6 +75,10 @@
         transition-property: border-color, box-shadow;
         transition-timing-function: ease;
         transition-duration: 200ms;
+
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
     }
 
     &__hint {

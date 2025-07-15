@@ -38,6 +38,10 @@
             transition: opacity 200ms ease;
             border-radius: inherit;
             color: var(--color-white);
+
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
         }
 
         &::after {
