@@ -2,8 +2,10 @@
 export default {
     extends: "stylelint-config-standard",
     rules: {
-        "font-family-name-quotes": "always-unless-keyword",
         "custom-property-empty-line-before": null,
+        "declaration-block-no-redundant-longhand-properties": null,
+
+        "font-family-name-quotes": "always-unless-keyword",
         "color-function-notation": "legacy",
         "hue-degree-notation": "number",
         "import-notation": "string",
