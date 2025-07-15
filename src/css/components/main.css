@@ -1,5 +1,6 @@
 .main {
     position: relative;
+    overflow: hidden;
 
     &__pattern {
         pointer-events: none;
