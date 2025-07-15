@@ -1,0 +1,47 @@
+.btn {
+    padding-top: var(--space-4);
+    padding-bottom: calc(var(--space-4) + var(--pixel) * 2);
+    padding-left: var(--space-20);
+    padding-right: calc(var(--space-20) + var(--pixel) * 2);
+    background: var(--gradient-brand);
+    border-radius: var(--rounded-full);
+    font-weight: var(--font-bold);
+    color: var(--color-gray-100);
+    cursor: pointer;
+    position: relative;
+    transition: box-shadow 200ms ease;
+}
+
+.btn::after {
+    border-radius: inherit;
+    content: "Get Started";
+    position: absolute;
+    padding: inherit;
+    inset: 0;
+    background: linear-gradient(90deg, var(--color-cyan-500) 60%, var(--color-teal-200) 95%);
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+@media (hover: hover) {
+    .btn:hover::after {
+        opacity: 0.5;
+    }
+
+    .btn:hover {
+        box-shadow: 0 0 0 3px var(--color-white);
+    }
+}
+
+@supports selector(:focus-visible) {
+    .btn:focus {
+        outline: 0;
+    }
+
+    .btn:focus-visible {
+        outline-width: 3px;
+        outline-offset: 3px;
+        outline-style: dashed;
+        outline-color: var(--color-white);
+    }
+}

@@ -1,0 +1,27 @@
+.intro {
+    padding-top: var(--space-5);
+    text-align: center;
+
+    &__image {
+        margin-bottom: var(--space-8);
+    }
+
+    &__title {
+        font-size: var(--text-2xl);
+        line-height: var(--leading-9);
+        margin-bottom: var(--space-4);
+    }
+
+    &__description {
+        font-size: var(--text-sm);
+        line-height: var(--leading-6);
+        margin-bottom: var(--space-8);
+    }
+
+    &__cta-btn {
+        margin: 0 auto;
+        display: block;
+        text-decoration: none;
+        width: fit-content;
+    }
+}
