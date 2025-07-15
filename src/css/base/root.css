@@ -8,6 +8,8 @@
     --color-cyan-500: hsl(198, 60%, 50%);
     --color-red-500: hsl(0, 100%, 63%);
 
+    --color-gray-300: hsl(0, 0%, 71%);
+
     --color-white: hsl(0, 0%, 100%);
 
     --font-primary: "Open Sans", system-ui, sans-serif;
