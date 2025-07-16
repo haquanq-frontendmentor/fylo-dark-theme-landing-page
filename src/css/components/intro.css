@@ -4,23 +4,23 @@
     max-width: 40rem;
 
     &__image {
-        margin-bottom: clamp(var(--space-8), 0.0916rem + 8.1425vw, var(--space-16));
+        margin-block-end: clamp(var(--space-8), 0.0916rem + 8.1425vw, var(--space-16));
     }
 
     &__title {
         font-size: clamp(var(--text-2xl), 0.5458rem + 4.0712vw, var(--text-4xl));
         line-height: calc(1.25em + var(--leading-1) + var(--pixel) * 2);
-        margin-bottom: var(--space-4);
+        margin-block-end: var(--space-4);
     }
 
     &__description {
         font-size: var(--text-sm);
         line-height: var(--leading-6);
-        margin-bottom: var(--space-8);
+        margin-block-end: var(--space-8);
     }
 
     &__cta-btn {
-        margin: 0 auto;
+        margin-inline: auto;
         display: block;
         text-decoration: none;
         width: clamp(12.5rem, 7.729rem + 20.3562vw, 17.5rem);

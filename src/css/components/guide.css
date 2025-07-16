@@ -9,7 +9,7 @@
     &__title {
         font-size: clamp(var(--text-xl), 0.5344rem + 3.0534vw, var(--text-3xl));
         line-height: calc(2em - var(--leading-4));
-        margin-bottom: var(--space-4);
+        margin-block-end: var(--space-4);
     }
 
     &__description {
@@ -19,7 +19,7 @@
         font-size: var(--text-sm);
         line-height: var(--leading-6);
         max-width: 56ch;
-        margin-bottom: var(--space-8);
+        margin-block-end: var(--space-8);
     }
 
     &__link {

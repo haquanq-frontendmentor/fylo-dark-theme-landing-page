@@ -1,7 +1,8 @@
 .btn {
     --outline-offset: 4px;
 
-    padding-block: var(--space-4) calc(var(--space-4) + var(--pixel) * 2);
+    padding-block-start: var(--space-4);
+    padding-block-end: calc(var(--space-4) + var(--pixel) * 2);
     padding-inline: var(--space-8);
     background: var(--gradient-brand);
     border-radius: var(--rounded-full);
