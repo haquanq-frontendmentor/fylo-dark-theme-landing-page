@@ -3,10 +3,9 @@ export default {
     plugins: {
         "postcss-import": {},
         "postcss-nested": {},
-        "postcss-preset-env": {},
         "postcss-custom-media": {},
         "postcss-sort-media-queries": {},
-        autoprefixer: {},
+        "postcss-preset-env": { autoprefixer: true },
         cssnano: { preset: "default" },
     },
 };
