@@ -1,19 +1,52 @@
-@import "./base/font.css";
-@import "./base/root.css";
+@import "./base/fonts.css";
+@import "./base/variables.css";
 @import "./base/reset.css";
 @import "./base/breakpoints.css";
 
-@import "./utils/container.css";
-@import "./utils/screen-reader.css";
+@import "./utils/accessibility.css";
 
-@import "./components/header.css";
+@import "./layouts/container.css";
+@import "./layouts/header.css";
+@import "./layouts/footer.css";
+
 @import "./components/nav.css";
 @import "./components/button.css";
-@import "./components/main.css";
 @import "./components/intro.css";
 @import "./components/feature.css";
 @import "./components/guide.css";
 @import "./components/testimonial.css";
 @import "./components/signup.css";
-@import "./components/footer.css";
 @import "./components/address.css";
+
+.main {
+    position: relative;
+    overflow: hidden;
+
+    &__pattern {
+        pointer-events: none;
+        position: absolute;
+        bottom: 0;
+        top: clamp(18rem, 7.5994rem + 44.376vw, 36rem);
+        left: 0;
+        right: 0;
+        z-index: -1;
+
+        &--image {
+            width: 100%;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            background-color: var(--color-navy-900);
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
