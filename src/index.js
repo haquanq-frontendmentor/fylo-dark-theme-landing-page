@@ -4,7 +4,7 @@ const emailHint = document.querySelector("#email-input-hint");
 
 const validateEmail = () => {
     let errorMessage = "";
-    if (emailInput.value == "") {
+    if (emailInput.value === "") {
         errorMessage = "Please fill out this field.";
     } else if (/^[^@]+@[^@]+\.[^@]+$/.test(emailInput.value) === false) {
         errorMessage = "Please provide a valid email address.";
