@@ -1,6 +1,4 @@
 .feature {
-    padding-top: var(--space-25);
-    padding-bottom: var(--space-25);
     line-height: var(--leading-6);
     text-align: center;
     padding-block: clamp(var(--space-25), 2.6718rem + 15.2672vw, var(--space-20) * 2);

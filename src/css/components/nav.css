@@ -30,7 +30,7 @@
         &::after {
             position: absolute;
             content: "";
-            padding-left: calc(var(--space-2));
+            padding-inline-start: calc(var(--space-2));
             top: 0;
             bottom: calc(var(--pixel) * -1);
             left: calc(var(--space-2) * -1);
