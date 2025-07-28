@@ -1,48 +1,73 @@
-# Frontend Mentor - Fylo dark theme landing page solution
+## Frontend Mentor - Fylo dark theme landing page solution
 
 This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+<p>
+  <a href="https://www.frontendmentor.io/solutions/mobile-first-responsive-without-zero-media-queries-vhMhfqkhn3">
+    <img
+      alt="Solution post"
+      src="https://img.shields.io/badge/Frontendmentor-blue?label=Solution%20on"
+    /></a>
+  <a href="https://haquanq-frontendmentor.github.io/fylo-dark-theme-landing-page/">
+    <img
+      alt="Live demo"
+      src="https://img.shields.io/badge/Demo-teal?label=Live"
+    /></a>
+  <a href="./LICENSE"
+    ><img
+      allt="MIT License"
+      src="https://img.shields.io/badge/MIT-blue?label=license"
+  /></a>
+</p>
+
 ## Table of contents
 
-- [Project overview](#rocket-project-overview)
-- [Development workflow](#boat-development-workflow)
+- [Project overview](#sunrise-project-overview)
+- [Development workflow](#stars-development-workflow)
 - [Working in this repository](#astronaut-working-in-this-repository)
-- [License](#page_with_curl-license)
 
-## :rocket: Project overview
+## :sunrise: Project overview
 
 ### Challenge equirements
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Implemented features
+### Todo 
+
+Features
+
+- [x] Subscription form
+    - [x] Show error when input is invalid
+    - [x] Accessible to screen readers
 
 Accessibility
 
 - [x] Responsive accross different screen sizes
 - [x] Added custom indicator when interactive elements focused
-- [x] Screen readers can announce form control behavior
+- [x] Screen readers can announce form controls behaviors
 
 ### Preview
 
-![](./.docs/preview.png)
+![](./docs/preview.png)
 
-## :boat: Development workflow
+## :stars: Development workflow
 
 ### Approach
 
-Developed with mobile-first workflow, followed with [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/)
+Site built with mobile-first workflow to prioritize mobile devices, made accessible using [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/).
 
-### Built with
+### Tools
 
-| Tool            | Note                                                    |
-| --------------- | ------------------------------------------------------- |
-| `HTML`          | Standard markup language                                |
-| `CSS + PostCSS` | Vanilla CSS with sass like features (nestings, imports) |
-| `Vite`          | Development server, build tool                          |
-| `Prettier`      | Code formatting                                         |
-| `StyleLint`     | Enforce CSS conventions                                 |
+- **PostCSS:** use SASS-like features in vanilla CSS, interpolation and minification..
+- **JavaScript**: add interactivity for components, handle application logic.
+- **Vite**: fast development server, production build and easy configuration.
+- **Prettier**: code formatter to maintain consistent coding style.
+- **Stylelint**: lint for CSS coding convention mistakes.
+
+### Deployment
+
+- Deployed on github page using Github Actions (manually triggered).
 
 ## :astronaut: Working in this repository
 
@@ -58,7 +83,7 @@ Having these tools installed:
 Open new terminal, run the following command:
 
 ```
-git clone https://github.com/haquanq/fm-fylo-dark-theme-landing-page.git
+git clone https://github.com/haquanq-frontendmentor/fylo-dark-theme-landing-page.git
 ```
 
 Then, run `npm install` to install all dependencies.
@@ -67,14 +92,10 @@ Then, run `npm install` to install all dependencies.
 npm install
 ```
 
-### Development workflow
+### Start development server
 
 In terminal, run `npm run dev` to start development server:
 
 ```
 npm run dev
 ```
-
-# :page_with_curl: License
-
-This project follows [MIT License](./LICENSE). **DO NOT** use this project as your solution on [Frontend mentor](https://www.frontendmentor.io/solutions).
