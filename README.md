@@ -1,4 +1,4 @@
-## Frontend Mentor - Fylo dark theme landing page solution
+## Frontend Mentor - Fylo Dark Theme Landing Page Solution
 
 This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -20,11 +20,11 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
   /></a>
 </p>
 
-## Table of contents
+## Table of Contents
 
 - [Project Overview](#sunrise-project-overview)
 - [Tech Stack and Approach](#stars-tech-stack-and-approach)
-- [Local Development](#seedling-local-development)
+- [Local Development](#leaves-local-development)
 - [Deployment](#maple_leaf-deployment)
 
 ## :sunrise: Project Overview
@@ -34,7 +34,7 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Progress
+### Status
 
 Features
 
@@ -67,7 +67,7 @@ Accessibility
 - Mobile-first workflow for better performance on smaller devices
 - Accessibility guided by [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/).
 
-## :seedling: Local development
+## :leaves: Local Development
 
 ### Prerequisites
 
@@ -84,7 +84,7 @@ cd fylo-dark-theme-landing-page
 npm install
 ```
 
-### Start development server
+### Start Development Server
 
 ```
 npm run dev
