@@ -22,24 +22,25 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 ## Table of contents
 
-- [Project overview](#sunrise-project-overview)
-- [Development workflow](#stars-development-workflow)
-- [Working in this repository](#astronaut-working-in-this-repository)
+- [Project Overview](#sunrise-project-overview)
+- [Tech Stack and Approach](#stars-tech-stack-and-approach)
+- [Local Development](#seedling-local-development)
+- [Deployment](#maple_leaf-deployment)
 
-## :sunrise: Project overview
+## :sunrise: Project Overview
 
-### Challenge equirements
+### Challenge Requirements
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Todo 
+### Progress
 
 Features
 
 - [x] Subscription form
-    - [x] Show error when input is invalid
-    - [x] Accessible to screen readers
+  - [x] Show error when input is invalid
+  - [x] Accessible to screen readers
 
 Accessibility
 
@@ -47,55 +48,48 @@ Accessibility
 - [x] Added custom indicator when interactive elements focused
 - [x] Screen readers can announce form controls behaviors
 
-### Preview
+### Preview (Desktop)
 
 ![](./docs/preview.png)
 
-## :stars: Development workflow
+## :stars: Tech Stack and Approach
+
+### Built with
+
+- **HTML5** – Semantic structure
+- **CSS Grid & Flexbox** – Layout
+- **PostCSS** – Nested rules, custom media queries, future CSS features, minification
+- **JavaScript** - Interactivity and application logic.
+- **Vite** - Fast development server, production build and easy configuration.
 
 ### Approach
 
-Site built with mobile-first workflow to prioritize mobile devices, made accessible using [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/).
+- Mobile-first workflow for better performance on smaller devices
+- Accessibility guided by [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/).
 
-### Tools
+## :seedling: Local development
 
-- **PostCSS:** use SASS-like features in vanilla CSS, interpolation and minification..
-- **JavaScript**: add interactivity for components, handle application logic.
-- **Vite**: fast development server, production build and easy configuration.
-- **Prettier**: code formatter to maintain consistent coding style.
-- **Stylelint**: lint for CSS coding convention mistakes.
+### Prerequisites
 
-### Deployment
+Install the following:
 
-- Deployed on github page using Github Actions (manually triggered).
+- Git (latest LTS recommended)
+- Node.js (latest LTS recommended)
 
-## :astronaut: Working in this repository
-
-### Presequisites
-
-Having these tools installed:
-
-- Git (prefer lastest LTS version)
-- NodeJS (prefer latest LTS version)
-
-### Clone this project to your machine
-
-Open new terminal, run the following command:
+### Setup
 
 ```
 git clone https://github.com/haquanq-frontendmentor/fylo-dark-theme-landing-page.git
-```
-
-Then, run `npm install` to install all dependencies.
-
-```
+cd fylo-dark-theme-landing-page
 npm install
 ```
 
 ### Start development server
 
-In terminal, run `npm run dev` to start development server:
-
 ```
 npm run dev
 ```
+
+## :maple_leaf: Deployment
+
+Deployed to github page via Github Actions (manually triggered).
