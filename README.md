@@ -92,4 +92,4 @@ npm run dev
 
 ## :maple_leaf: Deployment
 
-Deployed to github page via Github Actions (manually triggered).
+Deployed to Github Pages via Github Actions (manually triggered).
