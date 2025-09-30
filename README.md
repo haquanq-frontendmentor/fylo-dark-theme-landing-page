@@ -48,9 +48,9 @@ Accessibility
 - [x] Added custom indicator when interactive elements focused
 - [x] Screen readers can announce form controls behaviors
 
-### Preview (Desktop)
+### Preview
 
-![](./docs/preview.png)
+![](./docs/preview.jpg)
 
 ## :stars: Tech Stack and Approach
 
