@@ -1,0 +1,49 @@
+@use "../abstracts/" as *;
+
+.address {
+    font-style: normal;
+    font-size: var(--text-sm);
+    line-height: 1.5rem;
+
+    &__list {
+        display: grid;
+        gap: 1rem;
+        align-content: start;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        padding-inline: 2.5rem 0;
+        width: fit-content;
+
+        &:nth-child(1) {
+            grid-row: 1 / -1;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0.25rem;
+        left: 0;
+    }
+
+    &__link,
+    &__text {
+        color: $gray-100;
+    }
+
+    &__text {
+        max-width: 54ch;
+    }
+
+    &__link {
+        position: relative;
+        text-decoration: none;
+        @include transition(color 200ms, box-shadow 200ms);
+        @include hover {
+            color: $teal-200;
+            box-shadow: 0 2px 0 0 $teal-200;
+        }
+    }
+}

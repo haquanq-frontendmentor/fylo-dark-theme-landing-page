@@ -1,8 +1,10 @@
+@use "../abstracts/" as *;
+
 .signup {
-    padding-block-start: clamp(var(--space-6), 0.0687rem + 6.1069vw, var(--space-12));
-    padding-block-end: clamp(var(--space-6), -0.8855rem + 10.1781vw, var(--space-16));
-    padding-inline: clamp(var(--space-6), 0.0687rem + 6.1069vw, var(--space-12));
-    background-color: var(--color-navy-850);
+    padding-block-start: clamp(1.5rem, 0.0687rem + 6.1069vw, 3rem);
+    padding-block-end: clamp(1.5rem, -0.8855rem + 10.1781vw, 4rem);
+    padding-inline: clamp(1.5rem, 0.0687rem + 6.1069vw, 3rem);
+    background-color: $navy-850;
     max-width: 50rem;
     border-radius: var(--rounded-sm);
     box-shadow: var(--shadow-md);
@@ -17,20 +19,20 @@
         bottom: 0;
         left: -100rem;
         right: -100rem;
-        background-color: var(--color-navy-950);
+        background-color: $navy-950;
     }
 
     &__title {
         font-size: clamp(var(--text-xl), 0.5344rem + 3.0534vw, var(--text-3xl));
-        line-height: calc(2em - var(--leading-4));
-        margin-block-end: var(--space-4);
+        line-height: calc(2em - 1rem);
+        margin-block-end: 1rem;
     }
 
     &__description {
         font-size: var(--text-sm);
-        line-height: var(--leading-6);
-        margin-block-end: clamp(var(--space-6), 1.0229rem + 2.0356vw, var(--space-8));
-        padding-inline: clamp(0rem, -2.8626rem + 12.2137vw, var(--space-12));
+        line-height: 1.5rem;
+        margin-block-end: clamp(1.5rem, 1.0229rem + 2.0356vw, 2rem);
+        padding-inline: clamp(0rem, -2.8626rem + 12.2137vw, 3rem);
     }
 
     &__form {
@@ -38,11 +40,11 @@
         display: flex;
         flex-wrap: wrap;
         flex-grow: 1;
-        gap: var(--space-8) var(--space-4);
+        gap: 2rem 1rem;
     }
 
     &__field {
-        --input-padding-x: clamp(var(--space-6), 1.0229rem + 2.0356vw, var(--space-8));
+        --input-padding-x: clamp(1.5rem, 1.0229rem + 2.0356vw, 2rem);
 
         flex-grow: 5;
         flex-basis: 350px;
@@ -59,11 +61,7 @@
         height: 3.125rem;
         padding-inline: var(--input-padding-x);
         width: 100%;
-        transition: box-shadow 200ms ease;
-
-        @media (prefers-reduced-motion: reduce) {
-            transition: none;
-        }
+        @include transition(box-shadow 200ms);
     }
 
     &__input-overlay {
@@ -72,13 +70,7 @@
         inset: 0;
         border-radius: inherit;
         border: 2px solid transparent;
-        transition-property: border-color, box-shadow;
-        transition-timing-function: ease;
-        transition-duration: 200ms;
-
-        @media (prefers-reduced-motion: reduce) {
-            transition: none;
-        }
+        @include transition(border-color 200ms, box-shadow 200ms);
     }
 
     &__hint {
@@ -86,8 +78,8 @@
         text-align: start;
         top: 100%;
         font-size: clamp(var(--text-xs), 1.0389rem + -1.2327vw, var(--text-sm));
-        color: var(--color-red-500);
-        padding-block-start: clamp(var(--space-2), 0.3555rem + 0.6163vw, var(--space-3));
+        color: $red-500;
+        padding-block-start: clamp(0.5rem, 0.3555rem + 0.6163vw, 0.75rem);
         padding-inline: var(--input-padding-x);
     }
 
@@ -99,7 +91,7 @@
     }
 
     &__input[aria-invalid="true"] + &__input-overlay {
-        border-color: var(--color-red-500);
+        border-color: $red-500;
     }
 
     &__input[aria-invalid="true"] ~ &__hint {
@@ -107,13 +99,13 @@
     }
 
     &__input:focus + &__input-overlay {
-        border-color: var(--color-cyan-500);
+        border-color: $cyan-500;
     }
 
     @media (hover: hover) {
         &__input:hover + &__input-overlay {
-            border-color: var(--color-cyan-500);
-            box-shadow: 0 0 0 3px var(--color-gray-100);
+            border-color: $cyan-500;
+            box-shadow: 0 0 0 3px $gray-100;
         }
     }
 }

@@ -4,31 +4,15 @@
   "author": "haquanq",
   "license": "MIT",
   "type": "module",
+  "private": "true",
   "scripts": {
     "dev": "vite serve --port 5000",
     "build": "vite build"
   },
   "devDependencies": {
-    "cssnano": "^7.0.7",
-    "postcss-custom-media": "^11.0.6",
-    "postcss-import": "^16.1.1",
-    "postcss-nested": "^7.0.2",
     "postcss-preset-env": "^10.2.3",
     "postcss-sort-media-queries": "^5.2.0",
+    "sass-embedded": "^1.93.2",
     "vite": "^6.3.5"
-  },
-  "postcss": {
-    "plugins": {
-      "postcss-import": {},
-      "postcss-nested": {},
-      "postcss-custom-media": {},
-      "postcss-sort-media-queries": {},
-      "postcss-preset-env": {
-        "autoprefixer": true
-      },
-      "cssnano": {
-        "preset": "default"
-      }
-    }
   }
 }

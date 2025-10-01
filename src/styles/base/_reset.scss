@@ -1,16 +1,17 @@
+@use "../abstracts/" as *;
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 body {
     -webkit-font-smoothing: antialiased;
-    line-height: var(--leading-none);
+    line-height: 1;
     font-family: var(--font-primary);
-    background-color: var(--color-navy-850);
+    background-color: $navy-850;
 }
 
 img,
@@ -41,7 +42,7 @@ h6 {
 
 p {
     text-wrap: pretty;
-    color: var(--color-gray-200);
+    color: $gray-200;
 }
 
 h1,
@@ -50,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--color-white);
+    color: $white;
     font-family: var(--font-secondary);
     text-wrap: balance;
 }

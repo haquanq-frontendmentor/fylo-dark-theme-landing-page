@@ -1,0 +1,31 @@
+:root {
+    --shadow-sm: rgb(0, 0, 0, 15%) 0px 16px 32 -12px;
+    --shadow-md: rgb(0, 0, 0, 25%) 0px 16px 48px -8px;
+
+    --font-primary: "Open Sans", system-ui, sans-serif;
+    --font-secondary: "Raleway", system-ui, sans-serif;
+    --font-normal: 400;
+    --font-bold: 700;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 2rem;
+    --text-4xl: 2.5rem;
+
+    --tracking-easy: 0.005em;
+
+    --rounded-full: 9999px;
+    --rounded-xs: 0.25rem;
+    --rounded-sm: 0.5rem;
+
+    --focus-outline-width: 3px;
+    --focus-outline-offset: 3px;
+    --focus-outline-style: dashed;
+    --focus-outline-color: $white;
+}
+
+$space-base: 0.25rem;

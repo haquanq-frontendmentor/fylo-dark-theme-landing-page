@@ -1,0 +1,17 @@
+@use "./variables" as *;
+
+@mixin hover() {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+@mixin transition($args...) {
+    transition: $args;
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
+}

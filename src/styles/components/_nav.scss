@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -10,7 +12,7 @@
     &__list {
         list-style: none;
         display: flex;
-        gap: clamp(var(--space-6), -0.8855rem + 10.1781vw, var(--space-16));
+        gap: clamp(1.5rem, -0.8855rem + 10.1781vw, 4rem);
     }
 
     &__item {
@@ -21,49 +23,44 @@
         position: relative;
         display: block;
         text-decoration: none;
-        color: var(--color-gray-100);
+        color: $gray-100;
         font-size: clamp(var(--text-xs), 0.5115rem + 1.0178vw, var(--text-md));
-        line-height: var(--leading-6);
+        line-height: 1.5rem;
         border-radius: var(--rounded-xs);
 
         &::before,
         &::after {
             position: absolute;
             content: "";
-            padding-inline-start: calc(var(--space-2));
+            padding-inline-start: calc(0.5rem);
             top: 0;
-            bottom: calc(var(--pixel) * -1);
-            left: calc(var(--space-2) * -1);
-            right: calc(var(--space-2) * -1);
-            transition: opacity 200ms ease;
+            bottom: -0.125rem;
+            left: -0.5rem;
+            right: -0.5rem;
             border-radius: inherit;
-            color: var(--color-white);
-
-            @media (prefers-reduced-motion: reduce) {
-                transition: none;
-            }
+            color: $white;
+            @include transition(opacity 200ms);
         }
 
         &::after {
-            background: var(--gradient-brand);
+            background: $gradient-cyan;
             opacity: 0;
             content: attr(data-title);
         }
 
-        @media (hover: hover) {
-            &:hover::after {
-                opacity: 1;
+        &:focus-visible {
+            outline: none;
+            &::before {
+                outline-offset: var(--focus-outline-offset);
+                outline-width: var(--focus-outline-width);
+                outline-color: var(--focus-outline-color);
+                outline-style: var(--focus-outline-style);
             }
         }
 
-        @supports selector(:focus-visible) {
-            &:focus-visible {
-                outline: 0;
-            }
-
-            &:focus-visible::before {
-                outline: var(--focus-outline-width) var(--focus-outline-style) var(--focus-outline-color);
-                outline-offset: var(--focus-outline-offset);
+        @include hover {
+            &::after {
+                opacity: 1;
             }
         }
     }
@@ -73,35 +70,35 @@
             width: 2rem;
             height: 2rem;
             border-radius: var(--rounded-full);
-            border: 1px solid var(--color-white);
+            border: 1px solid $white;
             display: flex;
             align-items: center;
             justify-content: center;
 
             &::before,
             &::after {
-                inset: calc(var(--pixel) * -1);
+                inset: -0.125rem;
             }
 
             svg {
                 position: relative;
                 z-index: 99;
                 max-height: 1rem;
-                fill: var(--color-white);
+                fill: $white;
             }
         }
     }
 
     &--footer {
         display: grid;
-        gap: var(--space-12);
+        gap: 3rem;
         justify-content: initial;
         align-items: initial;
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
 
         & .nav__list {
             flex-direction: column;
-            gap: var(--space-4);
+            gap: 1rem;
 
             &--icon {
                 flex-direction: row;
