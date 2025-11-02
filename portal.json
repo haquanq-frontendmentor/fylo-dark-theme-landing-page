@@ -1,0 +1,15 @@
+{
+  "name": "Fylo Dark Theme Landing Page",
+  "featured": false,
+  "colors:": {
+    "brand": "#181E2A"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/fylo-dark-theme-landing-page/main/docs/preview.jpg"
+  },
+  "frontendmentor": {
+    "difficulty": "junior",
+    "challengeUrl": "https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd",
+    "solutionUrl": "https://www.frontendmentor.io/solutions/mobile-first-responsive-without-zero-media-queries-vhMhfqkhn3"
+  }
+}
